@@ -1,0 +1,16 @@
+<h1>Customer list<h1>
+    <div *ngFor="let customer of customers; let i=index">
+    
+      {{i+1}}) Name is {{customer.name | uppercase}}
+      <br>
+       Balance is {{customer.balance |uppercase}}
+       <br>
+      
+      Id is {{customer.id}}
+      <br>
+       <button (click)="removeCustomer(customer.id)">Remove Customer</button> 
+      
+      
+      
+      </div>
+      <br>
